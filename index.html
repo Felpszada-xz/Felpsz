@@ -3,34 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Felps Vendas - Workshop</title>
+  <meta name="description" content="Workshop de Vendas Felps Vendas - Aprenda a vender como um profissional em apenas 24 horas.">
+  <title>Felps Vendas - Workshop Profissional</title>
+
+  <!-- Link para Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <!-- Link para Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
   <style>
     body {
+      font-family: 'Roboto', sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 0;
       background: url('https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center fixed;
       background-size: cover;
-      color: #ffffff;
+      color: #fff;
     }
+
+    /* Header */
     header {
-      background: rgba(211, 47, 47, 0.9);
-      padding: 60px 20px;
+      background: rgba(255, 0, 0, 0.85);
+      padding: 100px 20px;
       text-align: center;
     }
     header h1 {
       font-size: 3em;
       margin: 0;
+      font-weight: 700;
     }
-    .content, .testimonials {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-      background: rgba(0, 0, 0, 0.6);
-      border-radius: 8px;
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
     }
-    .content h2, .testimonials h2 {
-      color: #ff4f4f;
-    }
+
+    /* Buttons */
     .cta-button {
       display: inline-block;
       margin-top: 20px;
@@ -45,48 +53,151 @@
     .cta-button:hover {
       background: #b71c1c;
     }
-    .testimonial {
-      margin-bottom: 20px;
-    }
-    footer {
-      background: rgba(0, 0, 0, 0.8);
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #aaa;
+
+    /* Sections */
+    .content, .testimonials, .faq, .form-section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 8px;
       margin-top: 40px;
     }
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2em;
-      }
-      .cta-button {
-        font-size: 1em;
-        padding: 10px 20px;
-      }
+    .content h2, .testimonials h2, .faq h2, .form-section h2 {
+      color: #ff4f4f;
+      font-size: 2em;
+    }
+
+    .faq-item {
+      margin: 10px 0;
+      padding: 10px;
+      border-bottom: 1px solid #444;
+    }
+    .faq-item:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Footer */
+    footer {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      text-align: center;
+      color: #aaa;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+
+    /* Social Media Icons */
+    .social-icons {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .social-icons a {
+      font-size: 1.5em;
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+    }
+    .social-icons a:hover {
+      color: #ff4f4f;
+    }
+
+    /* Form */
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    button[type="submit"] {
+      padding: 15px 30px;
+      background: #d32f2f;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background: #b71c1c;
     }
   </style>
 </head>
 <body>
 
+  <!-- Header Section -->
   <header>
     <h1>Felps Vendas</h1>
-    <p>Transforme suas habilidades em lucro</p>
+    <p>Aprenda a vender como um profissional em 24 horas!</p>
+    <a href="#inscricao" class="cta-button">Inscreva-se Agora</a>
   </header>
 
+  <!-- Content Section -->
   <div class="content">
-    <h2>Sobre o Workshop</h2>
-    <p>Jovens, preparados para o sucesso? Em apenas 24 horas e por R$50, aprenda técnicas de vendas comprovadas com Felpszada. Um workshop direto, prático e poderoso.</p>
-    <p><strong>Formas de pagamento:</strong> Pix, Cartão de Crédito</p>
-    <a href="#" class="cta-button">Quero Participar</a>
+    <h2>O Que Você Vai Aprender</h2>
+    <p>Em nosso workshop de vendas, você aprenderá:</p>
+    <ul>
+      <li>Como criar uma proposta de vendas irresistível.</li>
+      <li>Técnicas de persuasão e negociação avançada.</li>
+      <li>Como fechar vendas de forma eficaz e consistente.</li>
+      <li>Como aumentar seu faturamento com técnicas comprovadas.</li>
+    </ul>
   </div>
 
+  <!-- Testimonials Section -->
   <div class="testimonials">
-    <h2>O que dizem nossos participantes</h2>
-    <div class="testimonial">
-      <p>"O workshop mudou minha perspectiva de vendas. Altamente recomendável!" - Ana Silva</p>
+    <h2>Depoimentos</h2>
+    <div>
+      <p>"O workshop transformou minha maneira de ver as vendas. Eu comecei a aplicar imediatamente o que aprendi e já estou vendo resultados." - João Carlos</p>
     </div>
-    <div class="testimonial">
-      <p>"Conteúdo direto ao ponto e aplicável no dia a dia." - João Pereira</p>
+    <div>
+      <p>"Felpszada é o melhor quando se trata de ensinar vendas. Super recomendado!" - Maria Souza</p>
     </div>
-  </div
+  </div>
+
+  <!-- FAQ Section -->
+  <div class="faq">
+    <h2>Perguntas Frequentes</h2>
+    <div class="faq-item">
+      <h3>Qual o valor do workshop?</h3>
+      <p>O workshop custa apenas R$50,00 e você pode pagar via Pix ou Cartão de Crédito.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Quando começa o workshop?</h3>
+      <p>O workshop começa imediatamente após sua inscrição. As aulas são 100% online e você pode assistir de qualquer lugar.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Eu preciso de experiência em vendas?</h3>
+      <p>Não! O workshop é para iniciantes e também para quem já tem alguma experiência e quer aprimorar suas habilidades.</p>
+    </div>
+  </div>
+
+  <!-- Form Section -->
+  <div class="form-section" id="inscricao">
+    <h2>Inscreva-se Agora</h2>
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Seu Nome" required>
+      <input type="email" name="email" placeholder="Seu Email" required>
+      <textarea name="message" placeholder="Mensagem ou dúvidas" rows="4"></textarea>
+      <button type="submit">Inscrever-se</button>
+    </form>
+  </div>
+
+  <!-- Social Media Links -->
+  <div class="social-icons">
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Felpszada. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
