@@ -1,84 +1,97 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Felps Vendas - Workshop</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      color: #fff;
-      background: url('https://images.unsplash.com/photo-1605902711622-cfb43c44367f?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
-      background-size: cover;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #121212;
+      color: #ffffff;
     }
-
-    /* Escurece o fundo para legibilidade */
-    body::before {
-      content: '';
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: rgba(0, 0, 0, 0.7);
-      z-index: -1;
-    }
-
     header {
-      background-color: rgba(179, 0, 0, 0.8);
-      padding: 30px;
+      background: #d32f2f;
+      padding: 60px 20px;
       text-align: center;
     }
-
     header h1 {
+      font-size: 3em;
       margin: 0;
-      font-size: 2.5em;
     }
-
-    section {
-      padding: 40px;
-      text-align: center;
+    .content {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
     }
-
-    .cta {
-      background-color: #b30000;
-      color: white;
-      padding: 15px 30px;
-      font-size: 1.2em;
-      border: none;
-      cursor: pointer;
+    .content h2 {
+      color: #d32f2f;
+    }
+    .cta-button {
+      display: inline-block;
       margin-top: 20px;
+      padding: 15px 30px;
+      background: #d32f2f;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2em;
+      border-radius: 5px;
     }
-
-    .price {
-      font-size: 2em;
-      color: #ff4d4d;
+    .testimonials {
+      background: #1e1e1e;
+      padding: 40px 20px;
     }
-
+    .testimonial {
+      margin-bottom: 20px;
+    }
     footer {
-      background-color: rgba(17, 17, 17, 0.8);
-      color: #aaa;
+      background: #0d0d0d;
       text-align: center;
       padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      .cta-button {
+        font-size: 1em;
+        padding: 10px 20px;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Felps Vendas</h1>
-    <p>Transforme suas habilidades em lucro. Workshop para jovens!</p>
+    <p>Transforme suas habilidades em lucro</p>
   </header>
 
-  <section>
-    <h2>Duração: 24 Horas</h2>
-    <p>Aprenda as melhores técnicas de vendas com Felpszada. Um workshop direto, prático e poderoso.</p>
-    <p class="price">Apenas R$ 50</p>
-    <button class="cta" onclick="alert('Pagamento via Pix ou Cartão. Entre em contato para finalizar.')">Quero Participar</button>
-  </section>
+  <div class="content">
+    <h2>Sobre o Workshop</h2>
+    <p>Jovens, preparados para o sucesso? Em apenas 24 horas e por R$50, aprenda técnicas de vendas comprovadas com Felpszada. Um workshop direto, prático e poderoso.</p>
+    <p><strong>Formas de pagamento:</strong> Pix, Cartão de Crédito</p>
+    <a href="#" class="cta-button">Quero Participar</a>
+  </div>
+
+  <div class="testimonials">
+    <div class="content">
+      <h2>O que dizem nossos participantes</h2>
+      <div class="testimonial">
+        <p>"O workshop mudou minha perspectiva de vendas. Altamente recomendável!" - Ana Silva</p>
+      </div>
+      <div class="testimonial">
+        <p>"Conteúdo direto ao ponto e aplicável no dia a dia." - João Pereira</p>
+      </div>
+    </div>
+  </div>
 
   <footer>
-    &copy; 2025 Felpszada. Todos os direitos reservados.
+    © 2025 Felpszada. Todos os direitos reservados.
   </footer>
+
 </body>
 </html>
